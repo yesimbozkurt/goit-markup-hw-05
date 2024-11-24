@@ -368,9 +368,74 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-subscribe">
+            <p>Subscribe</p>
+            <form action="" class="footer-form">
+                <label for="">
+                    <input class="footer-form-email" type="email" placeholder="email">
+                </label>
+                <button class="footer-button" type="submit">Subscribe
+                    <svg class="footer-button-svg" width="24" height="24">
+                        <use href="./images/icons.svg#subscribe"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
 
  </footer>
+ <div class="modal-window">
+    <div class="modal-container">
+       <button class="modal-button" type="button">
+        <p class="modal-text"></p>
+        <form action="">
+            <div class="modal-form">
+                <label class="modal-form-item" for="user-name">Name 
+                    <input class="modal-form-input" id="user-name" type="text">
+                    <svg class="modal-form-svg" width="18" height="24">
+                        <use href="./images/icons.svg#person"></use>
+                    </svg>
+                </label>
+            </div>
+            <div class="modal-form">
+                <label class="modal-form-item" for="">Phone
+                    <div class="modal-form">
+                        <input class="modal-form-input" type="text">
+                        <svg class="modal-form-svg" width="18" height="24">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <input class="modal-form-input" type="text">
+                <svg class="modal-form-svg" width="18" height="24">
+                    <use href="./images/icons.svg#email"></use>
+                </svg> 
+            </div>
+            <div>
+                <label for="user-comment"></label>
+                <textarea class="modal-container-comment" name="user-comment" id="user-comment" placeholder="text input"></textarea>
+            </div>
+            <div>
+                <input class="visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy">
+                <label for="">
+                    <span>
+                        <svg width="10" height="8">
+                            <use href="./images/icons.svg#checkbox"></use>
+                        </svg>
+                    </span>
+                    <a href="">Privacy Policy</a>
+                </label>
+            </div>
+            <button></button>
+        </form>
+        <svg class="modal-icon" width="8" height="8">
+            <use href=""></use>
+        </svg>
+       </button> 
+    </div>
+ </div>
 
 </body>
 </html>
