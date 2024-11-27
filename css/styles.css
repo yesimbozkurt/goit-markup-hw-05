@@ -577,6 +577,7 @@ span{
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
+   .modal-form .modal-form-input:hover
    .modal-form .modal-form-input:focus {
     border-color: #4D5AE5;
    }
@@ -587,7 +588,8 @@ span{
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .modal-form-input:focus .modal-form-svg {
+   .modal-form-input:hover + .modal-form-svg
+   .modal-form-input:focus + .modal-form-svg {
     fill: #4d5ae5;
    }
 
@@ -626,7 +628,7 @@ span{
     justify-content: center;
     fill: transparent;
    }
-   .visually-hidden:checked .modal-form-item-span{
+   .visually-hidden:checked + .modal-form-item-span{
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
