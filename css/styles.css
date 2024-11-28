@@ -514,7 +514,7 @@ span{
     padding: 72px 24px 24px 24px;
     position: absolute;
    }
-   .modal-window .modal-button {
+   .modal-window .modal-close-button {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -530,17 +530,16 @@ span{
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .modal-button:hover,
-   .modal-button:focus {
+   .modal-container .modal-close-button:hover,
+   .modal-container .modal-close-button:focus {
     background-color: #404bbf;
     border: none;
    }
-   .modal-button .modal-icon {
+   .modal-container .modal-close-button .modal-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    }
-   .modal-button:hover .modal-icon,
-   .modal-button:focus .modal-icon{
+   .modal-close-button:focus + .modal-close-button .modal-icon {
     fill: #ffffff;
    }
    .modal-container .modal-text {
@@ -553,6 +552,7 @@ span{
     margin-bottom: 16px;
    }
    .modal-container .modal-form {
+    width: 100%;
     margin-bottom: 8px;
    }
    .modal-container .modal-form-item {
@@ -611,24 +611,24 @@ span{
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .modal-form .modal-form-comment:focus {
+   .modal-form .modal-form-item .modal-form-comment:focus {
     border-color: #4D5AE5;
    }
-   .modal-form .modal-form-box {
+   .modal-container .modal-form-box {
     margin-bottom: 24px;
    }
    .modal-form-item-span {
     width: 16px;
     height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
    }
-   .visually-hidden:checked + .modal-form-item-span{
+   .modal-form-box-input:checked + .modal-form-item .modal-form-item-span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
